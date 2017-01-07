@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GOT RPG Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+	<div id="container">
+		<div class="jumbotron" id= "gameTitle">
+			<h1 class="text-center"><strong>Game of Throne RPG</strong></h1>
+			<h4 class="text-center">"Valor Morghulis"</h4>
+			<hr>
+			<div class="text-center">
+			    <button class="btn btn-warning btn-xs themeButton"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>		  	
+		    	<button class="btn btn-default btn-xs pauseButton"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>	
+			</div>
+		</div>
+	</div>
+
+	<!--Character List -->
+	<div class = "row" id="charList">
+
+		<h1 id = "heading1">Character Selection</h1>
+		<div class = "col-lg-3 stats" id="jonSnow" value = "400">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Jon Snow</h3>
+				</div>
+				<div class="col-lg-12">
+					<img src="assets/images/jonsnow.jpg" alt="JonSnow">
+				</div>
+				<div class="col-lg-12">
+					<p id="jonSnowHp">HP: 400</p>
+				</div>
+			</div>			
+		</div>
+		<div class = "col-lg-3 stats" id="mountain" value = "300">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>The Mountain</h3>
+				</div>
+				<div class="col-lg-12">
+					<img src="assets/images/the-mountain.jpg" alt="theMountain">
+				</div>
+				<div class="col-lg-12">
+					<p id="mountainHp">HP: 300</p>
+				</div>	
+			</div>
+		</div>
+
+		<div class = "col-lg-3 stats" id="khaleesi" value = "375">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 >Khaleesi</h3>
+				</div>
+				<div class="col-lg-12">
+					<img src="assets/images/khaleesi.jpg" alt="khaleesi">
+				</div>
+				<div class="col-lg-12">
+					<p id="khaleesiHp">HP: 375</p>
+				</div>	
+			</div>
+		</div>
+		<div class = "col-lg-3 stats" id = "brienne" value = "350">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Brienne</h3>
+				</div>
+				<div class="col-lg-12">
+					<img src="assets/images/brienne.jpg" alt="Brienne">
+				</div>
+				<div class="col-lg-12">
+					<p id="breinneHp">HP: 350</p>
+				</div>	
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Battle Stage -->
+	
+	<div class = "row" id="row1">
+		<div class = "col-lg-12"><h1>Battle Grounds</h1></div>
+	</div>
+	
+
+	<div class = "row">
+		<div class = "col-lg-12"><p id= "battleMessage">Battle Message: <p></div>
+	</div>
+
+	
+
+	<div class = "row" id = "battleStage">
+		<div class = "col-lg-3" id = "attacker"></div>
+		<div class = "col-lg-3"><button id="attack">Attack</button></div>
+		<div class = "col-lg-3" id = "defender"></div>
+		<div class = "col-lg-3" id="enemy">
+		</div>		
+	</div>
+
+	<div class = "row" id="row2">
+		<div class = "col-lg-4">
+		Attacker Side
+		</div>
+		<div class = "col-lg-4">
+		Defender Side
+		</div>
+		<div class = "col-lg-4">
+		Enemy List
+		</div>		
+	</div>
+						   	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
